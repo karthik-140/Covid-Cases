@@ -4,6 +4,8 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { mapActions } from "../store/mapSlice";
 
+import "./LeafletMap.css";
+
 const Map = () => {
   const dispatch = useDispatch();
   const [showCountry, setShowCountry] = useState(null);
@@ -21,8 +23,9 @@ const Map = () => {
   }, [dispatch]);
 
   return (
+    <div className="maps">
       <MapContainer
-        style={{width: "100%", height: "100vh"}}
+        className="leaflet_map"
         center={[20.593683, 78.962883]}
         zoom={5}
         scrollWheelZoom={true}
@@ -59,6 +62,7 @@ const Map = () => {
           </Popup>
         )}
       </MapContainer>
+      </div>
   );
 };
 

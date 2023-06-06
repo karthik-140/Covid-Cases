@@ -1,0 +1,11 @@
+.maps{
+    margin-left: 25%;
+}
+
+.leaflet_map{
+    width: 60%;
+    height: 50vh;
+    z-index: 5;
+    margin: 2rem auto;
+    border-radius: 3px ;
+}

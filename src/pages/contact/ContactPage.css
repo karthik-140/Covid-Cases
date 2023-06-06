@@ -1,0 +1,53 @@
+.contact_form{
+    margin-left: 25%;
+    /* background-color: rgb(141, 132, 150); */
+}
+
+.form{
+    padding: 3rem 5rem;
+    width: max-content;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem auto;
+    text-align: center;
+    font-family: Roboto;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.form h1{
+    color: white;
+}
+
+.form label{
+  width: 8rem;
+  font-weight:500 ;
+  text-align: left;
+  font-size: 20px;
+}
+
+.form input{
+    border: 1px solid gray ;
+    outline: none;
+}
+
+.form input:focus{
+    border: 2px solid rgb(48, 21, 73) ;
+}
+
+.form button{
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    background-color:rgb(92, 39, 141) ;
+    border: 1px solid rgb(48, 21, 73);
+    border-radius: 4px;
+
+}
+
+.form button:hover{
+    background-color: rgb(78, 40, 114);
+    color: white;
+}
